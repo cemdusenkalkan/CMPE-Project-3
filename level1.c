@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <string.h>
-float islem(float a, float b){
-   float c;
-   if(a == 0){
-      printf("You must enter a value for a except zero.\n");
-   }else{
-      c = -b / a;
+
+float solve (float a, float b) {
+   return -(b/a) ;
+}
+int main() {
+   float a=0, b=0 ;
+   printf ("enter the value of a: ") ;
+   scanf ("%f", &a );
+   printf ("enter the value of b: ") ;
+   scanf ("%f", &b );
+   if (a == 0) {
+      printf ("no solution" ) ; 
    }
-   return c;
-}
-int main(){
-   float a, b, c;
-   printf("\n enter a value: ");
-   scanf("%f", &a);
-   printf("\n enter b value: ");
-    scanf("%f", &b);
-   c = islem(a, b);
-   printf("\n linear equation of an operation prepared at the values of ax+b = 0, if a=%f,b=%f,then x=    %f",a,b,c);
+   else {
+      float solution = solve (a,b) ;
+      printf (" the value of x is : %f" ,solution ) ;
+   }
    return 0;
-}
+ 
