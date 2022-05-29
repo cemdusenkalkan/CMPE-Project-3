@@ -1,0 +1,5 @@
+examples
+8a+7b = x 
+888a+444b = 666 
+111a + 222b = 777
+now, please try it yourself.
